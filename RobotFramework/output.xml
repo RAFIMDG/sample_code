@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on darwin)" generated="20231206 07:13:36.730" rpa="false" schemaversion="4">
+<suite id="s1" name="RobotFramework" source="/Users/grrafi/Downloads/RobotFramework">
+<suite id="s1-s1" name="Tests" source="/Users/grrafi/Downloads/RobotFramework/tests">
+<suite id="s1-s1-s1" name="testDemo2" source="/Users/grrafi/Downloads/RobotFramework/tests/testDemo2.robot">
+<test id="s1-s1-s1-t1" name="Select the Form and navigate to Child window" line="29">
+<kw name="open the browser with the Mortgage payment url" library="Generic" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/rahulshetty/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20231206 07:13:36.953" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20231206 07:13:44.577" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231206 07:13:44.579" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20231206 07:13:36.953" endtime="20231206 07:13:44.593"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20231206 07:13:44.593" endtime="20231206 07:13:44.593"/>
+</kw>
+<status status="FAIL" starttime="20231206 07:13:36.953" endtime="20231206 07:13:44.594"/>
+</kw>
+<kw name="Close Browser session" library="Generic" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231206 07:13:44.595" endtime="20231206 07:13:44.595"/>
+</kw>
+<status status="PASS" starttime="20231206 07:13:44.594" endtime="20231206 07:13:44.595"/>
+</kw>
+<status status="FAIL" starttime="20231206 07:13:36.951" endtime="20231206 07:13:44.595">Setup failed:
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<doc>To validate the Login form</doc>
+<status status="FAIL" starttime="20231206 07:13:36.755" endtime="20231206 07:13:44.597"/>
+</suite>
+<status status="FAIL" starttime="20231206 07:13:36.753" endtime="20231206 07:13:44.598"/>
+</suite>
+<status status="FAIL" starttime="20231206 07:13:36.732" endtime="20231206 07:13:44.599"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">RobotFramework.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="testDemo2">RobotFramework.Tests.testDemo2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
